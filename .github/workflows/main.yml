@@ -1,0 +1,19 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - main # หรือตาม branch ที่คุณใช้
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Build and Deploy
+        run: |
+          # แทรกคำสั่งที่ใช้สร้างหน้าเว็บหรือบันทึกไฟล์ที่ต้องการนำไปเผยแพร่ที่นี่
+          echo "Build and deploy your site here"
